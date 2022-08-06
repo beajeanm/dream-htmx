@@ -2,4 +2,5 @@
  (name dream_htmx)
  (public_name dream-htmx)
  (libraries dream)
- (instrumentation (backend bisect_ppx)))
+ (instrumentation
+  (backend bisect_ppx)))
