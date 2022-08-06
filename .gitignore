@@ -1,0 +1,7 @@
+# Dune generated files
+_build/
+*.install
+
+# Local OPAM switch
+_opam/
+
