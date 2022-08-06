@@ -78,7 +78,7 @@ let trigger_settle () =
        "HX-Trigger-After-Settle")
 
 let () =
-  Alcotest.run "Utils"
+  Alcotest.run "Htmx"
     [
       ( "Requests",
         [

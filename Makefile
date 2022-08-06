@@ -47,3 +47,9 @@ fmt: ## Format the codebase with ocamlformat
 .PHONY: utop
 utop: ## Run a REPL and link with the project's libraries
 	opam exec -- dune utop --root . lib -- -implicit-bindings
+
+.PHONY: coverage
+coverage: ## Run the bisect coverage report
+	find . -name '*.coverage' | xargs rm -f
+	opam exec -- dune runtest --instrument-with bisect_ppx --force
+	bisect-ppx-report html

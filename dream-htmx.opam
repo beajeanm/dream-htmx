@@ -9,9 +9,10 @@ homepage: "https://github.com/beajeanm/dream-htmx"
 doc: "https://beajeanm.github.io/dream-htmx/"
 bug-reports: "https://github.com/beajeanm/dream-htmx/issues"
 depends: [
-  "dune" {>= "3.0"}
   "ocaml" {>= "4.08.0"}
   "dream" {>= "1.0.0~alpha4"}
+  "dune" {>= "3.0" & >= "3.4.0"}
+  "bisect_ppx" {>= "2.5.0" & dev}
   "alcotest" {>= "1.6.0" & with-test}
   "odoc" {with-doc}
 ]

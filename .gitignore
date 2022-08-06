@@ -5,3 +5,6 @@ _build/
 # Local OPAM switch
 _opam/
 
+# Git bisect report
+_coverage/
+

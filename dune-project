@@ -23,4 +23,6 @@
  (depends
   (ocaml (>= 4.08.0))
   (dream (>= 1.0.0~alpha4))
+  (dune (>= 3.4.0))
+  (bisect_ppx (and (>= 2.5.0) :dev))
   (alcotest (and (>= 1.6.0) :with-test))))
