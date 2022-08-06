@@ -1,0 +1,3 @@
+(tests
+ (names tests)
+ (libraries alcotest dream dream-htmx))
